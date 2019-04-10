@@ -6,44 +6,123 @@ v2.0b1 | 201101
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
 
-html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-a,abbr,acronym,address,big,cite,code,
-del,dfn,em,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,
-b,u,i,center,
-dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,
-article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary,
-time,mark,audio,video{
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  font:inherit;
-  vertical-align:baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section{
-  display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-body{
-  line-height:1;
+body {
+  line-height: 1;
 }
-ol,ul{
-  list-style:none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote,q{
-  quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before,blockquote:after,
-q:before,q:after{
-  content:’’;
-  content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
 }
 /* remember to define visible focus styles! 
 :focus{
@@ -51,16 +130,152 @@ q:before,q:after{
 } */
 
 /* remember to highlight inserts somehow! */
-ins{
-  text-decoration:none;
+ins {
+  text-decoration: none;
 }
-del{
-  text-decoration:line-through;
+del {
+  text-decoration: line-through;
 }
 
-table{
-  border-collapse:collapse;
-  border-spacing:0;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Your Code Goes Here */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/* HEADER STYLES */
+header {
+  background: linear-gradient(#d55eeca6 100%, #fff 0%),
+    url(../images/earth_lights.png);
+  background-position: center;
+  background-size: cover;
+
+  /* background: #8939aa; */
+  height: 75vh;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+header .navigation .logo {
+  width: 378px;
+  height: 54px;
+  background: url(../images/boom_logo.png);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin-left: 120px;
+}
+
+header .navigation nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  margin-right: 120px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+header .navigation nav a {
+  margin-right: 30px;
+  position: relative;
+  transition: 0.3s;
+}
+
+header .navigation nav a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header .navigation nav a:hover:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 130%;
+  background: #d77ced;
+}
+
+header .navigation nav button {
+  background: none;
+  color: #fff;
+  font-size: 22px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+header .content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+header .content h1 {
+  font-size: 58px;
+}
+
+header .content span {
+  font-style: italic;
+}
+
+header .content p {
+  font-size: 20px;
+}
+
+p:nth-child(odd) {
+  margin-top: 20px;
+}
+
+header .content button {
+  background: #1fbaf2;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 40px;
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+header .content button img {
+  position: relative;
+  background: url(../icons/play_icon.svg);
+  top: 7px;
+  margin-right: 10px;
+}
+
+/* MAIN STYLES */
+main .works {
+  background: #3e393f;
+  height: 35vh;
+}
+
+main .solutions {
+  background: #fff;
+  height: 35vh;
+}
+
+main .services {
+  background: #989191;
+  height: 100vh;
+}
+
+/* footer styles */
+footer .socials {
+  background: #756179;
+  height: 20vh;
+}
+footer .contacts {
+  background: #3e393f;
+  height: 35vh;
+}
