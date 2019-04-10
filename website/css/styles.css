@@ -258,19 +258,147 @@ header .content button img {
 main .works {
   background: #3e393f;
   height: 35vh;
+  text-align: center;
+  padding: 20px 20% 20px 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .works h2 {
+  font-size: 38px;
+}
+
+main .works p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+main .works button {
+  font-size: 18px;
+  border: none;
+  background: #d55eec;
+  color: #fff;
+  border-radius: 40px;
+  padding: 20px 40px;
+  cursor: pointer;
 }
 
 main .solutions {
   background: #fff;
-  height: 35vh;
+  height: 45vh;
+  color: #666666;
+  text-align: center;
+}
+
+main .solutions h2 {
+  font-size: 38px;
+  margin: 60px 0px 60px 0px;
+}
+
+main .solutions .container {
+  display: flex;
+  min-height: 300px;
+  justify-content: space-around;
+}
+
+main .solutions .container div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin: 0px 20px 0px 20px; */
+}
+
+main .solutions .container div h3 {
+  font-size: 24px;
+}
+
+main .solutions .container div p {
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 main .services {
-  background: #989191;
-  height: 100vh;
+  position: relative;
+  color: #666666;
+  height: 1300px;
+  width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-/* footer styles */
+main .services div {
+  width: 600px;
+  height: 400px;
+}
+
+main .services h2{
+  font-size: 38px;
+  margin: 38px 0px 28px 0px;
+  position: relative;
+  margin-left: 30px; 
+}
+
+main .services h2:before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 10px;
+  left: -30px;
+  background: #DB7FEE;
+  border-radius: 50%;
+}
+
+main .services p{
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+main .services .one-desc {
+  order: 1;
+}
+
+main .services .one-img {
+  background: url(../images/customer_support.png);
+  background-size: cover;
+  background-position: center;
+  order: 4;
+}
+
+main .services .two-desc {
+ order: 5;
+}
+
+main .services .two-desc h2, .two-desc p{
+  margin-left: 120px;
+}
+
+
+main .services .two-img {
+  background: url(../images/strategy.png);
+  background-size: cover;
+  background-position: center;
+  order: 2;
+}
+
+main .services .three-desc {
+  order: 3;
+ }
+ 
+ main .services .three-img {
+   background: url(../images/grow_your_business.png);
+   background-size: cover;
+   background-position: center;
+   order: 6;
+ }
+
+/* FOOTER STYLES */
 footer .socials {
   background: #756179;
   height: 20vh;
