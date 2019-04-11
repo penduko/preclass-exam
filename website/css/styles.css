@@ -148,7 +148,11 @@ body {
   color: #fff;
 }
 
-/* HEADER STYLES */
+/* 
+------------------------------
+    HEADER STYLES 
+------------------------------
+*/
 header {
   background: linear-gradient(#d55eeca6 100%, #fff 0%),
     url(../images/earth_lights.png);
@@ -254,7 +258,13 @@ header .content button img {
   margin-right: 10px;
 }
 
-/* MAIN STYLES */
+
+
+/* 
+------------------------------
+    MAIN CONTENT STYLES 
+------------------------------
+*/
 main .works {
   background: #3e393f;
   height: 35vh;
@@ -398,7 +408,13 @@ main .services .three-img {
   order: 6;
 }
 
-/* FOOTER STYLES */
+
+
+/* 
+------------------------------
+    FOOTER STYLES 
+------------------------------
+*/
 footer .socials {
   background: #fbfbfb;
   height: 20vh;
@@ -470,7 +486,7 @@ footer .socials img {
 }
 
 footer .contacts {
-  background: #3E393F;
+  background: #3e393f;
   height: 35vh;
   display: flex;
   align-items: center;
@@ -499,7 +515,7 @@ footer .contacts p {
   width: 80%;
 }
 
-footer .contacts .five-desc img{
+footer .contacts .five-desc img {
   width: 250px;
 }
 
@@ -507,23 +523,24 @@ footer .contacts .five-img {
   position: relative;
 }
 
-footer .contacts .five-img a{
+footer .contacts .five-img a {
   text-decoration: none;
-  color: #28679A;
+  color: #28679a;
 }
 
-footer .contacts .five-img span{
+footer .contacts .five-img span {
   left: 30%;
 }
 
-footer .contacts .five-img a, span{
+footer .contacts .five-img a,
+span {
   font-size: 20px;
   top: 50%;
   position: relative;
 }
 
-footer .contacts .five-img p{
-  color: #5B575D;
+footer .contacts .five-img p {
+  color: #5b575d;
   top: 70%;
   position: absolute;
 }
