@@ -337,25 +337,25 @@ main .services div {
   height: 400px;
 }
 
-main .services h2{
+main .services h2 {
   font-size: 38px;
   margin: 38px 0px 28px 0px;
   position: relative;
-  margin-left: 30px; 
+  margin-left: 30px;
 }
 
-main .services h2:before{
+main .services h2:before {
   content: '';
   position: absolute;
   width: 15px;
   height: 15px;
   top: 10px;
   left: -30px;
-  background: #DB7FEE;
+  background: #db7fee;
   border-radius: 50%;
 }
 
-main .services p{
+main .services p {
   font-size: 18px;
   line-height: 1.5;
 }
@@ -372,13 +372,13 @@ main .services .one-img {
 }
 
 main .services .two-desc {
- order: 5;
+  order: 5;
 }
 
-main .services .two-desc h2, .two-desc p{
+main .services .two-desc h2,
+.two-desc p {
   margin-left: 120px;
 }
-
 
 main .services .two-img {
   background: url(../images/strategy.png);
@@ -389,21 +389,141 @@ main .services .two-img {
 
 main .services .three-desc {
   order: 3;
- }
- 
- main .services .three-img {
-   background: url(../images/grow_your_business.png);
-   background-size: cover;
-   background-position: center;
-   order: 6;
- }
+}
+
+main .services .three-img {
+  background: url(../images/grow_your_business.png);
+  background-size: cover;
+  background-position: center;
+  order: 6;
+}
 
 /* FOOTER STYLES */
 footer .socials {
-  background: #756179;
+  background: #fbfbfb;
   height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
 }
+
+footer .socials div {
+  width: 600px;
+  height: 100%;
+}
+
+footer .socials .four-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .socials .four-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .socials h4 {
+  font-size: 32px;
+}
+
+footer .socials p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer .socials button {
+  border: none;
+  border-radius: 40px;
+  padding: 20px 40px 20px 80px;
+  margin-top: 32px;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+}
+
+footer .socials button:nth-child(1) {
+  background: #3b5999;
+}
+
+footer .socials button:nth-child(2) {
+  background: #a93694;
+}
+
+footer .socials button::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  top: 0px;
+  left: 66px;
+}
+
+footer .socials img {
+  position: absolute;
+  left: 24px;
+  top: 18px;
+}
+
 footer .contacts {
-  background: #3e393f;
+  background: #3E393F;
   height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+footer .contacts div {
+  width: 600px;
+  height: 100%;
+}
+
+footer .contacts .five-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer .contacts h4 {
+  font-size: 32px;
+}
+
+footer .contacts p {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 80%;
+}
+
+footer .contacts .five-desc img{
+  width: 250px;
+}
+
+footer .contacts .five-img {
+  position: relative;
+}
+
+footer .contacts .five-img a{
+  text-decoration: none;
+  color: #28679A;
+}
+
+footer .contacts .five-img span{
+  left: 30%;
+}
+
+footer .contacts .five-img a, span{
+  font-size: 20px;
+  top: 50%;
+  position: relative;
+}
+
+footer .contacts .five-img p{
+  color: #5B575D;
+  top: 70%;
+  position: absolute;
 }
